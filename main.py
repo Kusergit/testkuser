@@ -1,9 +1,10 @@
 import telebot
 import config
 import random
+import os
 from telebot import types
-
-bot = telebot.TeleBot(config.TOKEN)
+token = os.environ.get('TOKENBOT')
+bot = telebot.TeleBot(str(token))
 @bot.message_handler(commands = ['start'])
 def start(message):
     """stic = open('media/hello.webp', 'rb')
