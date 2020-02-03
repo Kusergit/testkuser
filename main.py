@@ -1,5 +1,5 @@
 import telebot
-import config
+
 import random
 import os
 from telebot import types
